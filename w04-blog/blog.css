@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 15px solid #bdc3c7;
+    padding: 20px;
+    margin: 20px auto;
+    width: 85%;
+    font-family: fantsy;
+    font-size: 16px;
+}
+
+.date {
+    color: aquamarine;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.post h2{
+    font-size: 1.4rem;
+    color: rgba(27, 3, 3, 0.288);
+    padding-bottom: 1rem;
+}
+
+.post .quote{
+    border-left: 5px solid rgb(66, 66, 165);
+    padding-left: 8px;
+}
+
+.post-info{
+    margin-top: 1rem;
+}
+
+.pst {
+    margin-bottom: 1rem;
+}
