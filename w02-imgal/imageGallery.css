@@ -19,3 +19,14 @@
   width: 21%;
   margin: 1.6%;
 }
+
+p{
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 3px solid rgb(177, 214, 91);
+  width: 30%;
+  padding-bottom: 12px purple;
+  margin: 1.6%;
+}
