@@ -1,0 +1,146 @@
+/* Color variables */
+$color-primary-hover: #bdfe;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+@mixin setDisplayDimension($width, $margin) {
+  width: $width;
+  margin: $margin auto;
+}
+
+.wrapper {
+  background: #f4f6fb;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include setDisplayDimension(95vw, 2rem);
+}
+
+.header {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  .header__topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__logo {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+}
+
+.workList {
+  height: 20rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+
+  .workList__work {
+    display: grid;
+    grid-template-columns: 5fr 5fr 1fr;
+    transition: background-color 150ms ease-in-out;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: $color-primary-hover;
+    }
+  }
+}
+
+.footer {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 150ms ease-in;
+
+  .footer__images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  img {
+    display: inline-block;
+    margin: 0 0.5rem;
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: $color-primary-hover;
+    }
+  }
+
+  .footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+  }
+}
+
+@media (max-width: 786px) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+  }
+
+  .footer {
+    padding-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 150ms ease-in;
+
+    .footer__images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      display: inline-block;
+      margin: 0 2rem;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        background: $color-primary-hover;
+      }
+    }
+
+    .footer__copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7rem;
+    }
+  }
+}
