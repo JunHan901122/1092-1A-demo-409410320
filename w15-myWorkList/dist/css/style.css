@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -11,83 +9,46 @@ html {
 }
 
 body {
-  font-family: 'Ibarra Real Nova', serif;
-  background-color: #f9f2f2;
-  font-size: 1.3rem;
+  display: block;
+  font-family: "Google Sans", "Roboto", "Arial", sans-serif;
+  background: #fff;
+  color: #585c5e;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  max-width: 1438px;
 }
 
-header {
-  display: grid;
-  padding: 2rem 0;
-  margin: 2rem auto;
-  width: 90vw;
-  margin: 0 auto;
-}
-
-header .logo {
+.nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Archivo Narrow';
-}
-
-header .logo div {
-  border: 0.2px solid rgba(0, 0, 0, 0.6);
-  box-shadow: 0.2rem 0.2rem 0 0 rgba(0, 0, 0, 0.2);
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
-}
-
-header nav ul li {
-  padding: 1.8rem 1rem;
-}
-
-header .search {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0.8rem;
 }
 
-section.articles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-gap: 3rem;
-  min-width: 30rem;
-  width: 90vw;
-  margin: 0 auto;
+.nav .left-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
 }
 
-section.articles article {
-  border: 0.2px solid rgba(0, 0, 0, 0.6);
-  box-shadow: 0.3rem 0.3rem 0 0 rgba(0, 0, 0, 0.2);
+.nav .left-nav ul .item {
+  margin-top: 0.5rem;
 }
 
-section.articles article img {
-  width: 100%;
-  height: auto;
+.nav .right-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6em;
+  margin-right: 1rem;
 }
 
-@media (min-width: 768px) {
-  header {
-    grid-template-columns: repeat(3, 1fr);
-    -ms-grid-columns: 1fr 1fr 1fr;
-  }
-  header .logo {
-    justify-self: start;
-  }
-  header .search {
-    justify-self: end;
-  }
+.nav .right-nav ul .icon {
+  margin-top: 0.5rem;
+  fill: #5f6368;
 }
 /*# sourceMappingURL=style.css.map */
