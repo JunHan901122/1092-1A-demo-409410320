@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: block;
+  font-family: "Google Sans", "Roboto", "Arial", sans-serif;
+  background: #fff;
+  color: #585c5e;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  max-width: 1438px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem;
+}
+
+.nav .left-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav .left-nav ul .item {
+  margin-top: 0.5rem;
+}
+
+.nav .right-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6em;
+  margin-right: 1rem;
+}
+
+.nav .right-nav ul .icon {
+  margin-top: 0.5rem;
+  fill: #5f6368;
+}
+/*# sourceMappingURL=style.css.map */
