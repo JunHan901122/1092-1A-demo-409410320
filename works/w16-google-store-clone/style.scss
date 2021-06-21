@@ -16,6 +16,10 @@ ul {
   box-sizing: content-box;
 }
 
+.btn :hover {
+  cursor: pointer;
+}
+
 body {
   font-family: "Google Sans", "Roboto", "Arial", sans-serif;
   background: #fff;
@@ -34,7 +38,7 @@ body {
   z-index: 10;
   .navbar-container {
     margin: 0 auto;
-    width: 80vw;
+    width: 1392px;
     height: 3.5rem;
     display: flex;
     justify-content: space-between;
@@ -72,12 +76,14 @@ body {
   height: 575px;
   justify-content: space-between;
   overflow: hidden;
+  color: #3c4043;
   z-index: 1;
 
   .carousel__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     div {
       margin: 0 auto;
@@ -288,3 +294,5 @@ body {
     justify-content: space-between;
   }
 }
+
+
