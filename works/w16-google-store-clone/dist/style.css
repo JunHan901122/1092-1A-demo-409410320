@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbarShadow {
+  box-shadow: 0 0.1rem 0.8rem #e8e8e8;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.btn :hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Google Sans", "Roboto", "Arial", sans-serif;
+  background: #fff;
+  color: #5f6368;
+  line-height: 1;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+.navbar {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  height: 3.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(109, 103, 103, 0.15);
+  z-index: 10;
+}
+.navbar .navbar-container {
+  margin: 0 auto;
+  width: 1392px;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
+}
+.navbar .navbar-container .navbar--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar .navbar-container .navbar--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.navbar .navbar-container .posters__btn {
+  font-size: 5rem;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  background-color: #f8f9fa;
+  top: 56px;
+  margin: 0 auto;
+  max-width: 1392px;
+  height: 575px;
+  justify-content: space-between;
+  overflow: hidden;
+  color: #3c4043;
+  z-index: 1;
+}
+.carousel .carousel__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.carousel .carousel__text div {
+  margin: 0 auto;
+}
+.carousel .carousel__img {
+  position: relative;
+  margin: auto 0;
+}
+
+.showcase {
+  position: relative;
+  top: 56px;
+  overflow: scroll;
+}
+.showcase ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.9rem;
+  padding: 1rem;
+}
+.showcase ul li div {
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.posters {
+  position: relative;
+  top: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #3c4043;
+  -moz-osx-font-smoothing: grayscale;
+}
+.posters__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.posters__foot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.posters .p1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 250px;
+}
+.posters .p1 .posters__slogan {
+  max-width: 566px;
+  text-align: center;
+}
+.posters .p1 .posters__text {
+  position: relative;
+  left: 120px;
+}
+.posters .p2 {
+  position: relative;
+  top: -30px;
+}
+.posters .p2 .posters__img {
+  position: relative;
+  top: -30px;
+}
+.posters .p2 .posters__text {
+  position: relative;
+  top: 300px;
+  left: -280px;
+  z-index: 3;
+}
+.posters .p2 .posters__text .posters__slogan {
+  max-width: 524px;
+  text-align: center;
+}
+.posters .p2 .posters__img {
+  position: relative;
+  margin: 0 auto;
+  top: -70px;
+  left: 50px;
+}
+.posters .p3 .posters__mp4 {
+  display: flex;
+  justify-content: space-around;
+}
+.posters .p4 {
+  position: relative;
+  top: -90px;
+}
+.posters .p4 .posters__img {
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+}
+.posters .p4 .posters__text {
+  position: relative;
+  top: 350px;
+  left: -400px;
+  z-index: 3;
+}
+.posters .p4 .posters__text .posters__slogan {
+  max-width: 524px;
+  text-align: center;
+}
+.posters .p4 .posters__img {
+  position: relative;
+  margin: 0 auto;
+}
+.posters .p5 {
+  position: relative;
+  top: -150px;
+}
+.posters .p5 .posters__img {
+  margin: 0 auto;
+}
+.posters .p5 .posters__text {
+  position: relative;
+  top: -400px;
+  left: 350px;
+}
+.posters .p5 .posters__text .posters__slogan {
+  max-width: 524px;
+  text-align: center;
+}
+.posters .p6 {
+  position: relative;
+  background-color: #f8f9fa;
+  width: 100vw;
+  height: 415px;
+  top: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.posters .p6 .posters__slogan {
+  max-width: 580px;
+  text-align: center;
+}
+.posters .p6 .posters__foot {
+  gap: 2rem;
+}
+
+.footer {
+  position: relative;
+  top: -220px;
+}
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 75vw;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+.footer__mid {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-size: 0.9rem;
+  gap: 1;
+  right: 0;
+  gap: 1rem;
+}
+.footer__bottom {
+  max-width: 75vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
